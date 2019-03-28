@@ -10,9 +10,9 @@ localVue.use(VueI18n)
 localVue.use(Vuex)
 
 const i18n = new VueI18n({
-  locale: 'en-gb',
-  fallbackLocale: 'en-gb',
-  messages: { 'en-gb': {} },
+  locale: 'fr-fr',
+  fallbackLocale: 'fr-fr',
+  messages: { 'fr-fr': {} },
   silentTranslationWarn: true
 })
 
@@ -23,12 +23,12 @@ const store = new Vuex.Store({
     ui: {
       namespaced: true,
       state: {
-        language: 'en-gb',
+        language: 'fr-fr',
         headerType: null
       },
       actions: uiAction,
       getters: {
-        language: state => 'en-gb',
+        language: state => 'fr-fr',
         headerType: state => null
       }
     }

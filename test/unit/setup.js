@@ -5,4 +5,4 @@ import VTooltip from 'v-tooltip'
 Vue.config.productionTip = false
 Vue.use(VTooltip, { defaultHtml: false })
 
-moment.tz.setDefault('America/Los_Angeles')
+moment.tz.setDefault('Europe/Paris')

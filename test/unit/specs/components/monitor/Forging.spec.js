@@ -10,9 +10,9 @@ localVue.use(VueI18n)
 localVue.use(Vuex)
 
 const i18n = new VueI18n({
-  locale: 'en-gb',
-  fallbackLocale: 'en-gb',
-  messages: { 'en-gb': {} },
+  locale: 'fr-fr',
+  fallbackLocale: 'fr-fr',
+  messages: { 'fr-fr': {} },
   silentTranslationWarn: true
 })
 
@@ -34,7 +34,7 @@ describe('monitor/Forging', () => {
       mixins,
       store,
       stubs: {
-        'ark-meter': '<div></div>'
+        'ock-meter': '<div></div>'
       },
       propsData: {
         delegates: []

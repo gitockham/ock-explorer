@@ -3,11 +3,11 @@ import * as types from '../mutation-types'
 export default {
   namespaced: true,
   state: {
-    name: 'ARK',
+    name: 'OCK',
     rate: 1,
-    symbol: 'Ѧ',
+    symbol: 'O',
     lastConversion: {
-      to: 'USD',
+      to: 'EUR',
       timestamp: 1,
       rate: 1
     }

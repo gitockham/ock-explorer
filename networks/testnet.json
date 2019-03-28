@@ -1,5 +1,5 @@
 {
-  "title": "TARK Explorer",
+  "title": "TOCK Explorer",
   "server": "http://127.0.0.1:4003/api/v2",
   "alias": "Testnet local",
   "activeDelegates": 51,
@@ -7,8 +7,8 @@
   "currencies": [],
   "knownWallets": {},
   "defaults": {
-    "token": "TARK",
-    "symbol": "TѦ",
+    "token": "TOCK",
+    "symbol": "TO",
     "currency": null,
     "priceChart": false
   }

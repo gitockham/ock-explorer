@@ -1,14 +1,14 @@
 {
-  "name": "ark-explorer",
+  "name": "ock-explorer",
   "version": "3.0.0",
-  "description": "A Blockchain Explorer for ARK using Vue.js and Tailwind CSS",
-  "author": "Brian Faust",
+  "description": "A Blockchain Explorer for OCK using Vue.js and Tailwind CSS",
+  "author": "Luc Talarico",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/arkecosystem/explorer.git"
+    "url": "git+https://github.com/gitockham/ock-explorer.git"
   },
   "bugs": {
-    "url": "https://github.com/arkecosystem/explorer/issues"
+    "url": "https://github.com/gitockham/ock-explorer/issues"
   },
   "license": "MIT",
   "scripts": {

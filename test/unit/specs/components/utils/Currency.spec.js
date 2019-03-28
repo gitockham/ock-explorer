@@ -18,7 +18,7 @@ const i18n = new VueI18n({
 
 describe('Utils/Currency', () => {
   it('Should display a currency amount', () => {
-    store.dispatch('network/setToken', 'ARK')
+    store.dispatch('network/setToken', 'OCK')
 
     const wrapper = mount(Currency, {
       propsData: {

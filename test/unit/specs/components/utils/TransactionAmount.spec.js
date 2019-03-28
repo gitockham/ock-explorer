@@ -10,9 +10,9 @@ const localVue = createLocalVue()
 localVue.use(VueI18n)
 localVue.use(Vuex)
 const i18n = new VueI18n({
-  locale: 'en-gb',
-  fallbackLocale: 'en-gb',
-  messages: { 'en-gb': {} },
+  locale: 'fr-fr',
+  fallbackLocale: 'fr-fr',
+  messages: { 'fr-fr': {} },
   silentTranslationWarn: true
 })
 
@@ -21,7 +21,7 @@ const outgoingAddress = 'AN7BURQn5oqBRBADeWhmmUMJGQTy5Seey3'
 
 describe('Utils/TransactionAmount', () => {
   beforeAll(() => {
-    store.dispatch('network/setSymbol', 'Ѧ')
+    store.dispatch('network/setSymbol', 'O')
   })
 
   it('Should display an outgoing transaction in red', () => {

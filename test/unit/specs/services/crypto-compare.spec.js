@@ -3,13 +3,13 @@ import store from '@/store'
 
 describe('CryptoCompare Service', () => {
   beforeAll(() => {
-    store.dispatch('network/setServer', 'https://explorer.ark.io/api/v2')
+    store.dispatch('network/setServer', 'https://explorer.ockham.consulting/api/v2')
     store.dispatch('network/setAlias', 'Main')
-    store.dispatch('network/setToken', 'ARK')
+    store.dispatch('network/setToken', 'OCK')
     store.dispatch('currency/setName', 'USD')
   })
 
-  it('should return price for ARK in given currency', async () => {
+  it('should return price for OCK in given currency', async () => {
     const data = await CryptoCompareService.price('USD')
     expect(data).toBeGreaterThan(0)
   })
@@ -45,7 +45,7 @@ describe('CryptoCompare Service', () => {
   })
 
   it('should return year values, even if token matches currency', async () => {
-    store.dispatch('currency/setName', 'ARK')
+    store.dispatch('currency/setName', 'OCK')
     const data = await CryptoCompareService.year()
     expect(data.labels.length).toBeGreaterThanOrEqual(366)
     expect(data.datasets.length).toBeGreaterThanOrEqual(366)
@@ -66,7 +66,7 @@ describe('CryptoCompare Service', () => {
 
   it('should return null if not on Main network', async () => {
     store.dispatch('network/setAlias', 'Development')
-    store.dispatch('currency/setName', 'DARK')
+    store.dispatch('currency/setName', 'DOCK')
     const data = await CryptoCompareService.dailyAverage(1535190579)
     expect(data).toBe(null)
   })
